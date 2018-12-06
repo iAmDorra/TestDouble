@@ -1,10 +1,10 @@
 ﻿namespace TestDouble.Test
 {
-    public class AcceptingAuthorizer : IAuthorizer
+    public class DenyAccessAuthorizer : IAuthorizer
     {
         public bool Authorize()
         {
-            return true;
+            return false;
         }
     }
 }
