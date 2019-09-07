@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AllowAccessAuthorizer.cs" />
     <Compile Include="CalculatorTest.cs" />
+    <Compile Include="DiscountApplierSpy.cs" />
     <Compile Include="DiscountApplierTest.cs" />
     <Compile Include="CounterNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
