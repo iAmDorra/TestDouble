@@ -26,5 +26,19 @@ namespace TestDouble.Test
 
             Assert.AreEqual(users.Count, notifier.CallCount);
         }
+
+
+        [TestMethod]
+        public void Should_notify_user_when_apply_discount()
+        {
+            List<User> users = new List<User> { new User() };
+            var notifier = new VerifyNotifier(); ;
+            DiscountApplier discountApplier = new DiscountApplier(notifier, users);
+            var item = new Item();
+
+            discountApplier.Apply(item, 20);
+
+            Assert.IsTrue(notifier.IsCalledForAll(users));
+        }
     }
 }

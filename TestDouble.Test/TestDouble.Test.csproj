@@ -56,6 +56,7 @@
     <Compile Include="CounterNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefusingAuthorizer.cs" />
+    <Compile Include="VerifyNotifier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
