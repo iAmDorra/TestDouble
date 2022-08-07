@@ -4,7 +4,7 @@ namespace TestDouble
 {
     public class Calculator
     {
-        private IAuthorizer authorizer;
+        private readonly IAuthorizer authorizer;
 
         public Calculator(IAuthorizer authorizer)
         {
@@ -23,8 +23,7 @@ namespace TestDouble
                 throw new InvalidOperationException("Can't divide by zero !");
             }
 
-            double result = (double)numerator / (double)denominator;
-            return result;
+            return numerator / denominator;
         }
     }
 }
